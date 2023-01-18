@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-pcm4qq3+(83zg2fci)41@s+7+^ff_)4(*+poiluqho7x=4*b^0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["jiaa-photo-2023.onrender.com", '127.0.0.1']
+ALLOWED_HOSTS = ["jia-photo-2023.onrender.com", '127.0.0.1']
 
 # Application definition
 
