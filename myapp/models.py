@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Currency(models.Model):
     iso = models.CharField(max_length=3)
     long_name = models.CharField(max_length=50)
@@ -28,3 +27,11 @@ class Rates(models.Model):
         return self.currency.iso + " " + self.x_currency + " " + str(self.rate)
     def __str__(self):
         return self.currency.iso + " " + self.x_currency + " " + str(self.rate)
+class Weather_App(models.Model):
+    country = models.CharField(max_length=50)
+    city = models.CharField(max_length=20)
+    weather = models.FloatField()
+    def __repr__(self):
+        return self.country + " " + self.city+" " +str(self.weather)
+    def __str__(self):
+        return self.country + " " + self.city+" " +str(self.weather)
